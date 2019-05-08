@@ -11,15 +11,29 @@ Node.JS back-end framework based on [Koa 2][1] & [ECMAScript Decorator proposal]
 
 ### Core logic
 
-`source/User.js`
+[`source/UserController.js`][3]
+
+([`source/User.js`][4] is a [`Model` class][5])
 
 ```javascript
-import KoaController, { GET } from 'mvkoa';
+import KoaController, { GET, PATCH, POST } from 'mvkoa';
 
-export default class User extends KoaController {
+import { User } from './User';
+
+export default class UserController extends KoaController {
     @GET()
     listAll(context) {
         context.body = [];
+    }
+
+    @PATCH('/:id')
+    extend(context, id, body) {
+        context.body = { id, ...body };
+    }
+
+    @POST('/', User)
+    create(context, body) {
+        context.body = body.valueOf();
     }
 }
 ```
@@ -28,13 +42,21 @@ export default class User extends KoaController {
 
 ```javascript
 import KoaController from 'mvkoa';
+import bodyParser from 'koa-bodyparser';
 import mount from 'koa-mount';
 
-import User from './User';
+import UserController from './UserController';
 
-const app = new KoaController();
-
-app.use(mount('/users', new User()));
+const app = new KoaController()
+    .use(async (context, next) => {
+        try {
+            await next();
+        } catch ({ message }) {
+            (context.status = 500), (context.body = message);
+        }
+    })
+    .use(bodyParser())
+    .use(mount('/users', new UserController()));
 
 app.listen(() => console.log(`Server run at ${app.address}`));
 ```
@@ -46,7 +68,9 @@ npm init
 
 npm install \
     mvkoa \
+    koa-bodyparser \
     koa-mount \
+    data-scheme \
     @babel/polyfill \
     @babel/runtime
 
@@ -86,7 +110,7 @@ npm install \
             [
                 "@babel/plugin-proposal-decorators",
                 {
-                    "decoratorsBeforeExport": false
+                    "decoratorsBeforeExport": true
                 }
             ],
             "@babel/plugin-transform-runtime"
@@ -105,3 +129,6 @@ npm start
 
 [1]: https://koajs.com/
 [2]: https://github.com/tc39/proposal-decorators/tree/master/previous#readme
+[3]: https://tech-query.me/MVKoa/test-file/test/source/UserController.js.html
+[4]: https://tech-query.me/MVKoa/test-file/test/source/User.js.html
+[5]: https://tech-query.me/DataScheme/

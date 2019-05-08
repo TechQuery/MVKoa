@@ -4,32 +4,51 @@ import Router from 'koa-route';
 import IP from 'internal-ip';
 
 const route_map = new WeakMap(),
-    address_map = new WeakMap();
+    address_map = new WeakMap(),
+    body_type = {
+        post: 1,
+        put: 1,
+        patch: 1
+    };
 
 export default class KoaController extends Koa {
     constructor() {
-        super();
+        const { constructor } = super();
 
-        route_map
-            .get(this.constructor)
-            .forEach(([type, path, placement, method]) =>
-                this.use(
-                    Router[type.toLowerCase()](
-                        path,
-                        method.bind(
-                            placement === 'static' ? this.constructor : this
-                        )
-                    )
-                )
+        const route = route_map.get(constructor);
+
+        if (!route) return;
+
+        for (let [type, path, schema, placement, method] of route) {
+            type = type.toLowerCase();
+
+            this.use(
+                Router[type](path, (context, ...parameter) => {
+                    const data =
+                        type in body_type
+                            ? context.request.body
+                            : context.query;
+
+                    return method.apply(
+                        placement === 'static' ? constructor : this,
+                        [
+                            context,
+                            ...parameter.slice(0, -1),
+                            schema ? new schema(data) : data,
+                            parameter.pop()
+                        ]
+                    );
+                })
             );
+        }
     }
 
     /**
-     * @return   {Object}
+     * @type     {Object}
      * @property {String} family
      * @property {String} address
      */
-    static getIPA() {
+    static get IPA() {
         const address = IP.v4.sync() || IP.v6.sync() || 'localhost';
 
         return {
@@ -45,9 +64,7 @@ export default class KoaController extends Koa {
         return super.listen(...parameter, function() {
             address_map.set(
                 that,
-                `http://${KoaController.getIPA().address}:${
-                    this.address().port
-                }`
+                `http://${KoaController.IPA.address}:${this.address().port}`
             );
 
             return callback.apply(this, arguments);
@@ -63,45 +80,52 @@ export default class KoaController extends Koa {
 }
 
 /**
- * @param {String} method - HTTP method or `ALL`
- * @param {String} path   - https://github.com/koajs/route#readme
+ * @param {String}    [method='GET'] - HTTP method or `ALL`
+ * @param {String}    [path='/']     - https://github.com/koajs/route#readme
+ * @param {?Function} schema         - Data Schema for `query` or `body`
  *
  * @return {Decorator}
  */
-export function request(method, path) {
+export function request(method = 'GET', path = '/', schema) {
     return meta => {
         meta.finisher = Class => {
             const map = route_map.get(Class) || [];
 
-            map.push([method, path, meta.placement, meta.descriptor.value]);
+            map.push([
+                method,
+                path,
+                schema,
+                meta.placement,
+                meta.descriptor.value
+            ]);
 
             route_map.set(Class, map);
         };
     };
 }
 
-export function HEAD(path) {
-    return request('HEAD', path);
+export function HEAD(path, schema) {
+    return request('HEAD', path, schema);
 }
 
-export function GET(path) {
-    return request('GET', path);
+export function GET(path, schema) {
+    return request('GET', path, schema);
 }
 
-export function POST(path) {
-    return request('POST', path);
+export function POST(path, schema) {
+    return request('POST', path, schema);
 }
 
-export function PUT(path) {
-    return request('PUT', path);
+export function PUT(path, schema) {
+    return request('PUT', path, schema);
 }
 
-export function PATCH(path) {
-    return request('PATCH', path);
+export function PATCH(path, schema) {
+    return request('PATCH', path, schema);
 }
 
-export function DELETE(path) {
-    return request('DELETE', path);
+export function DELETE(path, schema) {
+    return request('DELETE', path, schema);
 }
 
 /**
@@ -120,4 +144,10 @@ export function DELETE(path) {
  * @param {DecoratorDescriptor} meta
  *
  * @return {?DecoratorDescriptor}
+ */
+
+/**
+ * @typedef {Function} Koa
+ *
+ * @see https://github.com/koajs/koa/blob/master/docs/api/index.md#application
  */
