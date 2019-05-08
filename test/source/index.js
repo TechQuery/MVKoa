@@ -1,4 +1,4 @@
-import { KoaController, GET } from '../../source';
+import KoaController, { GET } from '../../source';
 
 export default class User extends KoaController {
     @GET('/')

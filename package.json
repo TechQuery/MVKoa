@@ -1,6 +1,6 @@
 {
     "name": "mvkoa",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Node.JS back-end framework based on Koa 2 & ECMAScript Decorator proposal",
     "keywords": [
         "back-end",
@@ -43,6 +43,7 @@
         "node": "^7.6.0"
     },
     "dependencies": {
+        "internal-ip": "^4.3.0",
         "koa": "^2.7.0",
         "koa-route": "^3.2.0"
     },

@@ -1,10 +1,12 @@
 import Koa from 'koa';
-
 import Router from 'koa-route';
 
-const route_map = new WeakMap();
+import IP from 'internal-ip';
 
-export class KoaController extends Koa {
+const route_map = new WeakMap(),
+    address_map = new WeakMap();
+
+export default class KoaController extends Koa {
     constructor() {
         super();
 
@@ -20,6 +22,43 @@ export class KoaController extends Koa {
                     )
                 )
             );
+    }
+
+    /**
+     * @return   {Object}
+     * @property {String} family
+     * @property {String} address
+     */
+    static getIPA() {
+        const address = IP.v4.sync() || IP.v6.sync() || 'localhost';
+
+        return {
+            family: `IPv${address.includes(':') ? 6 : 4}`,
+            address
+        };
+    }
+
+    listen(...parameter) {
+        const that = this,
+            callback = parameter.splice(-1, 1)[0];
+
+        return super.listen(...parameter, function() {
+            address_map.set(
+                that,
+                `http://${KoaController.getIPA().address}:${
+                    this.address().port
+                }`
+            );
+
+            return callback.apply(this, arguments);
+        });
+    }
+
+    /**
+     * @type {?String} HTTP URL
+     */
+    get address() {
+        return address_map.get(this);
     }
 }
 

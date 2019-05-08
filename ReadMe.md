@@ -14,7 +14,7 @@ Node.JS back-end framework based on [Koa 2][1] & [ECMAScript Decorator proposal]
 `source/User.js`
 
 ```javascript
-import { KoaController, GET } from 'mvkoa';
+import KoaController, { GET } from 'mvkoa';
 
 export default class User extends KoaController {
     @GET()
@@ -27,12 +27,16 @@ export default class User extends KoaController {
 `source/index.js`
 
 ```javascript
-import Koa from 'koa';
+import KoaController from 'mvkoa';
 import mount from 'koa-mount';
 
 import User from './User';
 
-new Koa().use(mount('/users', new User())).listen();
+const app = new KoaController();
+
+app.use(mount('/users', new User()));
+
+app.listen(() => console.log(`Server run at ${app.address}`));
 ```
 
 ### Installation
@@ -41,9 +45,8 @@ new Koa().use(mount('/users', new User())).listen();
 npm init
 
 npm install \
-    koa \
-    koa-mount \
     mvkoa \
+    koa-mount \
     @babel/polyfill \
     @babel/runtime
 
