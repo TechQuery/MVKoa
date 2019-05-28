@@ -23,13 +23,13 @@ export default class KoaController extends Koa {
             type = type.toLowerCase();
 
             this.use(
-                Router[type](path, (context, ...parameter) => {
-                    const data =
+                Router[type](path, async (context, ...parameter) => {
+                    var data =
                         type in body_type
                             ? context.request.body
                             : context.query;
 
-                    return method.apply(
+                    data = await method.apply(
                         placement === 'static' ? constructor : this,
                         [
                             context,
@@ -38,6 +38,8 @@ export default class KoaController extends Koa {
                             parameter.pop()
                         ]
                     );
+
+                    if (data != null) context.body = data;
                 })
             );
         }

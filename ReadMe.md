@@ -7,7 +7,7 @@ Node.JS back-end framework based on [Koa 2][1] & [ECMAScript Decorator proposal]
 
 [![NPM](https://nodei.co/npm/mvkoa.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/mvkoa/)
 
-## Usage
+## Basic usage
 
 ### Core logic
 
@@ -22,18 +22,18 @@ import { User } from './User';
 
 export default class UserController extends KoaController {
     @GET()
-    listAll(context) {
-        context.body = [];
+    listAll() {
+        return [];
     }
 
     @PATCH('/:id')
     extend(context, id, body) {
-        context.body = { id, ...body };
+        return { id, ...body };
     }
 
     @POST('/', User)
     create(context, body) {
-        context.body = body.valueOf();
+        return body.valueOf();
     }
 }
 ```
@@ -126,6 +126,10 @@ npm run build
 
 npm start
 ```
+
+## Advanced usage
+
+https://tech-query.me/MVKoa/manual/
 
 [1]: https://koajs.com/
 [2]: https://github.com/tc39/proposal-decorators/tree/master/previous#readme

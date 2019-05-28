@@ -1,6 +1,6 @@
 {
     "name": "mvkoa",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "description": "Node.JS back-end framework based on Koa 2 & ECMAScript Decorator proposal",
     "keywords": [
         "back-end",
@@ -32,7 +32,7 @@
         "test": "npm run format  &&  npm run lint  &&  mocha --exit",
         "build": "npm test  &&  npm run pack  &&  esdoc",
         "prepublishOnly": "npm run build",
-        "help": "esdoc  &&  opn docs/index.html"
+        "help": "esdoc  &&  open-cli docs/index.html"
     },
     "husky": {
         "hooks": {
@@ -49,17 +49,17 @@
     },
     "peerDependencies": {
         "@babel/polyfill": "^7.4.4",
-        "@babel/runtime": "^7.4.4"
+        "@babel/runtime": "^7.4.5"
     },
     "devDependencies": {
         "@babel/cli": "^7.4.4",
-        "@babel/core": "^7.4.4",
+        "@babel/core": "^7.4.5",
         "@babel/plugin-proposal-decorators": "^7.4.4",
         "@babel/plugin-transform-runtime": "^7.4.4",
         "@babel/polyfill": "^7.4.4",
-        "@babel/preset-env": "^7.4.4",
+        "@babel/preset-env": "^7.4.5",
         "@babel/register": "^7.4.4",
-        "@babel/runtime": "^7.4.4",
+        "@babel/runtime": "^7.4.5",
         "babel-eslint": "^10.0.1",
         "data-scheme": "^0.7.3",
         "esdoc": "^1.1.0",
@@ -67,13 +67,13 @@
         "esdoc-external-nodejs-plugin": "^1.0.0",
         "esdoc-standard-plugin": "^1.0.0",
         "eslint": "^5.16.0",
-        "husky": "^2.2.0",
+        "husky": "^2.3.0",
         "koa-bodyparser": "^4.2.1",
         "koa-mount": "^4.0.0",
         "mocha": "^6.1.4",
-        "node-fetch": "^2.5.0",
-        "opn-cli": "^4.1.0",
-        "prettier": "^1.17.0",
+        "node-fetch": "^2.6.0",
+        "open-cli": "^5.0.0",
+        "prettier": "^1.17.1",
         "should": "^13.2.3"
     },
     "prettier": {

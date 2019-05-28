@@ -4,17 +4,17 @@ import { User } from './User';
 
 export default class UserController extends KoaController {
     @GET()
-    listAll(context) {
-        context.body = [];
+    listAll() {
+        return [];
     }
 
     @PATCH('/:id')
     extend(context, id, body) {
-        context.body = { id, ...body };
+        return { id, ...body };
     }
 
     @POST('/', User)
     create(context, body) {
-        context.body = body.valueOf();
+        return body.valueOf();
     }
 }
