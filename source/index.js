@@ -6,9 +6,9 @@ import IP from 'internal-ip';
 const route_map = new WeakMap(),
     address_map = new WeakMap(),
     body_type = {
-        post: 1,
-        put: 1,
-        patch: 1
+        POST: 1,
+        PUT: 1,
+        PATCH: 1
     };
 
 export default class KoaController extends Koa {
@@ -19,30 +19,41 @@ export default class KoaController extends Koa {
 
         if (!route) return;
 
-        for (let [type, path, schema, placement, method] of route) {
-            type = type.toLowerCase();
-
+        for (let [type, path, schema, placement, method] of route)
             this.use(
-                Router[type](path, async (context, ...parameter) => {
-                    var data =
-                        type in body_type
-                            ? context.request.body
-                            : context.query;
-
-                    data = await method.apply(
-                        placement === 'static' ? constructor : this,
-                        [
-                            context,
-                            ...parameter.slice(0, -1),
-                            schema ? new schema(data) : data,
-                            parameter.pop()
-                        ]
-                    );
-
-                    if (data != null) context.body = data;
-                })
+                Router[type.toLowerCase()](
+                    path,
+                    this.wrap.bind(this, method, placement, schema)
+                )
             );
-        }
+    }
+
+    /**
+     * @private
+     *
+     * @param {Function} method
+     * @param {String}   placement
+     * @param {Function} schema
+     * @param {Context}  context
+     * @param {...*}     [parameter]
+     */
+    async wrap(method, placement, schema, context, ...parameter) {
+        var data =
+            context.method in body_type ? context.request.body : context.query;
+
+        data = await method.apply(placement === 'static' ? constructor : this, [
+            context,
+            ...parameter.slice(0, -1),
+            schema ? new schema(data) : data,
+            parameter.pop()
+        ]);
+
+        if (!(data != null)) return;
+
+        if (context.method === 'POST') context.status = 201;
+        else if (data === '') context.status = 204;
+
+        context.body = data;
     }
 
     /**

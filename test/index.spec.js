@@ -76,13 +76,15 @@ describe('HTTP router', () => {
      */
     describe('POST request', () => {
         it('passes Schema validation', async () => {
-            const data = await (await request(
+            const response = await request(
                 '/users',
                 'POST',
                 'name=test&email=test@example.com'
-            )).json();
+            );
 
-            data.should.be.eql({
+            response.status.should.be.equal(201);
+
+            (await response.json()).should.be.eql({
                 name: 'test',
                 email: 'test@example.com',
                 gender: 2,

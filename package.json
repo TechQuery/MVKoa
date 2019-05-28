@@ -1,6 +1,6 @@
 {
     "name": "mvkoa",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "description": "Node.JS back-end framework based on Koa 2 & ECMAScript Decorator proposal",
     "keywords": [
         "back-end",
