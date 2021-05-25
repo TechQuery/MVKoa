@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | mvkoa</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Node.JS back-end framework based on Koa 2 &amp; ECMAScript Decorator proposal"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="mvkoa"><meta property="twitter:description" content="Node.JS back-end framework based on Koa 2 &amp; ECMAScript Decorator proposal"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/TechQuery/MVKoa"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/source/index.js~KoaController.html">KoaController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DELETE">DELETE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-GET">GET</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-HEAD">HEAD</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-PATCH">PATCH</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-POST">POST</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-PUT">PUT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-request">request</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Decorator">Decorator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-DecoratorDescriptor">DecoratorDescriptor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Koa">Koa</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="mvkoa">MVKoa</h1><p>Node.JS back-end framework based on <a href="https://koajs.com/">Koa 2</a> &amp; <a href="https://github.com/tc39/proposal-decorators/tree/master/previous#readme">ECMAScript Decorator proposal</a></p>
+<p><a href="https://david-dm.org/TechQuery/MVKoa"><img src="https://david-dm.org/TechQuery/MVKoa.svg" alt="NPM Dependency"></a>
+<a href="https://travis-ci.com/TechQuery/MVKoa"><img src="https://travis-ci.com/TechQuery/MVKoa.svg?branch=master" alt="Build Status"></a></p>
+<p><a href="https://nodei.co/npm/mvkoa/"><img src="https://nodei.co/npm/mvkoa.png?downloads=true&amp;downloadRank=true&amp;stars=true" alt="NPM"></a></p>
+<h2 id="basic-usage">Basic usage</h2><h3 id="core-logic">Core logic</h3><p><a href="https://tech-query.me/MVKoa/test-file/test/source/UserController.js.html"><code>source/UserController.js</code></a></p>
+<p>(<a href="https://tech-query.me/MVKoa/test-file/test/source/User.js.html"><code>source/User.js</code></a> is a <a href="https://tech-query.me/DataScheme/"><code>Model</code> class</a>)</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">import KoaController, { GET, PATCH, POST } from &apos;mvkoa&apos;;
+
+import { User } from &apos;./User&apos;;
+
+export default class UserController extends KoaController {
+    @GET()
+    listAll() {
+        return [];
+    }
+
+    @PATCH(&apos;/:id&apos;)
+    extend(context, id, body) {
+        return { id, ...body };
+    }
+
+    @POST(&apos;/&apos;, User)
+    create(context, body) {
+        return body.valueOf();
+    }
+}</code>
+</code></pre>
+<p><code>source/index.js</code></p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">import KoaController from &apos;mvkoa&apos;;
+import bodyParser from &apos;koa-bodyparser&apos;;
+import mount from &apos;koa-mount&apos;;
+
+import UserController from &apos;./UserController&apos;;
+
+const app = new KoaController()
+    .use(async (context, next) =&gt; {
+        try {
+            await next();
+        } catch ({ message }) {
+            (context.status = 500), (context.body = message);
+        }
+    })
+    .use(bodyParser())
+    .use(mount(&apos;/users&apos;, new UserController()));
+
+app.listen(() =&gt; console.log(`Server run at ${app.address}`));</code>
+</code></pre>
+<h3 id="installation">Installation</h3><pre><code class="lang-shell"><code class="source-code prettyprint">npm init
+
+npm install \
+    mvkoa \
+    koa-bodyparser \
+    koa-mount \
+    data-scheme \
+    @babel/polyfill \
+    @babel/runtime
+
+npm install \
+    @babel/cli \
+    @babel/core \
+    @babel/preset-env \
+    @babel/plugin-proposal-decorators \
+    @babel/plugin-transform-runtime</code>
+</code></pre>
+<h3 id="configuration">Configuration</h3><p><code>package.json</code></p>
+<pre><code class="lang-json"><code class="source-code prettyprint">{
+    &quot;scripts&quot;: {
+        &quot;build&quot;: &quot;babel source/ -d dist/ -s&quot;,
+        &quot;start&quot;: &quot;node dist/&quot;
+    },
+    &quot;engines&quot;: {
+        &quot;node&quot;: &quot;^7.6.0&quot;
+    },
+    &quot;babel&quot;: {
+        &quot;presets&quot;: [
+            [
+                &quot;@babel/preset-env&quot;,
+                {
+                    &quot;targets&quot;: {
+                        &quot;node&quot;: &quot;7.6.0&quot;
+                    }
+                }
+            ]
+        ],
+        &quot;plugins&quot;: [
+            [
+                &quot;@babel/plugin-proposal-decorators&quot;,
+                {
+                    &quot;decoratorsBeforeExport&quot;: true
+                }
+            ],
+            &quot;@babel/plugin-transform-runtime&quot;
+        ]
+    }
+}</code>
+</code></pre>
+<h3 id="bootstrap">Bootstrap</h3><pre><code class="lang-shell"><code class="source-code prettyprint">npm run build
+
+npm start</code>
+</code></pre>
+<h2 id="advanced-usage">Advanced usage</h2><p><a href="https://tech-query.me/MVKoa/manual/">https://tech-query.me/MVKoa/manual/</a></p>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

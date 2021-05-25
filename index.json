@@ -1,0 +1,1357 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 49,
+    "kind": "external",
+    "name": "http~ClientRequest",
+    "externalLink": "https://nodejs.org/dist/latest/docs/api/http.html#http_class_http_clientrequest",
+    "memberof": "source/.external-nodejs.js",
+    "static": true,
+    "longname": "source/.external-nodejs.js~http~ClientRequest",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "source/index.js",
+    "content": "import Koa from 'koa';\nimport Router from 'koa-route';\n\nimport IP from 'internal-ip';\n\nconst route_map = new WeakMap(),\n    address_map = new WeakMap(),\n    body_type = {\n        POST: 1,\n        PUT: 1,\n        PATCH: 1\n    };\n\nexport default class KoaController extends Koa {\n    constructor() {\n        const { constructor } = super();\n\n        const route = route_map.get(constructor);\n\n        if (!route) return;\n\n        for (let [type, path, schema, placement, method] of route)\n            this.use(\n                Router[type.toLowerCase()](\n                    path,\n                    this.wrap.bind(this, method, placement, schema)\n                )\n            );\n    }\n\n    /**\n     * @private\n     *\n     * @param {Function} method\n     * @param {String}   placement\n     * @param {Function} schema\n     * @param {Context}  context\n     * @param {...*}     [parameter]\n     */\n    async wrap(method, placement, schema, context, ...parameter) {\n        var data =\n            context.method in body_type ? context.request.body : context.query;\n\n        data = await method.apply(placement === 'static' ? constructor : this, [\n            context,\n            ...parameter.slice(0, -1),\n            schema ? new schema(data) : data,\n            parameter.pop()\n        ]);\n\n        if (!(data != null)) return;\n\n        if (context.method === 'POST') context.status = 201;\n        else if (data === '') context.status = 204;\n\n        context.body = data;\n    }\n\n    /**\n     * @type     {Object}\n     * @property {String} family\n     * @property {String} address\n     */\n    static get IPA() {\n        const address = IP.v4.sync() || IP.v6.sync() || 'localhost';\n\n        return {\n            family: `IPv${address.includes(':') ? 6 : 4}`,\n            address\n        };\n    }\n\n    listen(...parameter) {\n        const that = this,\n            callback = parameter.splice(-1, 1)[0];\n\n        return super.listen(...parameter, function() {\n            address_map.set(\n                that,\n                `http://${KoaController.IPA.address}:${this.address().port}`\n            );\n\n            return callback.apply(this, arguments);\n        });\n    }\n\n    /**\n     * @type {?String} HTTP URL\n     */\n    get address() {\n        return address_map.get(this);\n    }\n}\n\n/**\n * @param {String}    [method='GET'] - HTTP method or `ALL`\n * @param {String}    [path='/']     - https://github.com/koajs/route#readme\n * @param {?Function} schema         - Data Schema for `query` or `body`\n *\n * @return {Decorator}\n */\nexport function request(method = 'GET', path = '/', schema) {\n    return meta => {\n        meta.finisher = Class => {\n            const map = route_map.get(Class) || [];\n\n            map.push([\n                method,\n                path,\n                schema,\n                meta.placement,\n                meta.descriptor.value\n            ]);\n\n            route_map.set(Class, map);\n        };\n    };\n}\n\nexport function HEAD(path, schema) {\n    return request('HEAD', path, schema);\n}\n\nexport function GET(path, schema) {\n    return request('GET', path, schema);\n}\n\nexport function POST(path, schema) {\n    return request('POST', path, schema);\n}\n\nexport function PUT(path, schema) {\n    return request('PUT', path, schema);\n}\n\nexport function PATCH(path, schema) {\n    return request('PATCH', path, schema);\n}\n\nexport function DELETE(path, schema) {\n    return request('DELETE', path, schema);\n}\n\n/**\n * @typedef {Object} DecoratorDescriptor\n *\n * @property {String}                kind         - `class`, `field` or `method`\n * @property {String}                [key]        - Member name\n * @property {String}                [placement]  - `static` or `prototype`\n * @property {Object}                [descriptor] - Last parameter of `Object.defineProperty()`\n * @property {DecoratorDescriptor[]} [elements]   - Class members\n */\n\n/**\n * @typedef {Function} Decorator\n *\n * @param {DecoratorDescriptor} meta\n *\n * @return {?DecoratorDescriptor}\n */\n\n/**\n * @typedef {Function} Koa\n *\n * @see https://github.com/koajs/koa/blob/master/docs/api/index.md#application\n */\n",
+    "static": true,
+    "longname": "/home/travis/build/TechQuery/MVKoa/source/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "variable",
+    "name": "route_map",
+    "memberof": "source/index.js",
+    "static": true,
+    "longname": "source/index.js~route_map",
+    "access": "public",
+    "export": false,
+    "importPath": "mvkoa/source/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "class",
+    "name": "KoaController",
+    "memberof": "source/index.js",
+    "static": true,
+    "longname": "source/index.js~KoaController",
+    "access": "public",
+    "export": true,
+    "importPath": "mvkoa/source/index.js",
+    "importStyle": "KoaController",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "koa~Koa"
+    ]
+  },
+  {
+    "__docId__": 53,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "source/index.js~KoaController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/index.js~KoaController#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "method",
+    "name": "wrap",
+    "memberof": "source/index.js~KoaController",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "source/index.js~KoaController#wrap",
+    "access": "private",
+    "description": "",
+    "lineNumber": 40,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "method",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "placement",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "schema",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Context"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "context",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "...*"
+        ],
+        "spread": true,
+        "optional": true,
+        "name": "parameter",
+        "description": ""
+      }
+    ],
+    "ignore": true,
+    "return": null
+  },
+  {
+    "__docId__": 55,
+    "kind": "get",
+    "name": "IPA",
+    "memberof": "source/index.js~KoaController",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/index.js~KoaController.IPA",
+    "access": "public",
+    "description": "",
+    "lineNumber": 64,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "family",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "address",
+        "description": ""
+      }
+    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "method",
+    "name": "listen",
+    "memberof": "source/index.js~KoaController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/index.js~KoaController#listen",
+    "access": "public",
+    "description": null,
+    "lineNumber": 73,
+    "undocument": true,
+    "params": [
+      {
+        "name": "parameter",
+        "types": [
+          "...*"
+        ],
+        "spread": true
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "get",
+    "name": "address",
+    "memberof": "source/index.js~KoaController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/index.js~KoaController#address",
+    "access": "public",
+    "description": "",
+    "lineNumber": 90,
+    "type": {
+      "nullable": true,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "function",
+    "name": "request",
+    "memberof": "source/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/index.js~request",
+    "access": "public",
+    "export": true,
+    "importPath": "mvkoa/source/index.js",
+    "importStyle": "{request}",
+    "description": "",
+    "lineNumber": 102,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'GET'",
+        "defaultRaw": "'GET'",
+        "name": "method",
+        "description": "HTTP method or `ALL`"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'/'",
+        "defaultRaw": "'/'",
+        "name": "path",
+        "description": "https://github.com/koajs/route#readme"
+      },
+      {
+        "nullable": true,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "schema",
+        "description": "Data Schema for `query` or `body`"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Decorator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "function",
+    "name": "HEAD",
+    "memberof": "source/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/index.js~HEAD",
+    "access": "public",
+    "export": true,
+    "importPath": "mvkoa/source/index.js",
+    "importStyle": "{HEAD}",
+    "description": null,
+    "lineNumber": 120,
+    "undocument": true,
+    "params": [
+      {
+        "name": "path",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "schema",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "function",
+    "name": "GET",
+    "memberof": "source/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/index.js~GET",
+    "access": "public",
+    "export": true,
+    "importPath": "mvkoa/source/index.js",
+    "importStyle": "{GET}",
+    "description": null,
+    "lineNumber": 124,
+    "undocument": true,
+    "params": [
+      {
+        "name": "path",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "schema",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "function",
+    "name": "POST",
+    "memberof": "source/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/index.js~POST",
+    "access": "public",
+    "export": true,
+    "importPath": "mvkoa/source/index.js",
+    "importStyle": "{POST}",
+    "description": null,
+    "lineNumber": 128,
+    "undocument": true,
+    "params": [
+      {
+        "name": "path",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "schema",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "function",
+    "name": "PUT",
+    "memberof": "source/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/index.js~PUT",
+    "access": "public",
+    "export": true,
+    "importPath": "mvkoa/source/index.js",
+    "importStyle": "{PUT}",
+    "description": null,
+    "lineNumber": 132,
+    "undocument": true,
+    "params": [
+      {
+        "name": "path",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "schema",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "PATCH",
+    "memberof": "source/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/index.js~PATCH",
+    "access": "public",
+    "export": true,
+    "importPath": "mvkoa/source/index.js",
+    "importStyle": "{PATCH}",
+    "description": null,
+    "lineNumber": 136,
+    "undocument": true,
+    "params": [
+      {
+        "name": "path",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "schema",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "DELETE",
+    "memberof": "source/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/index.js~DELETE",
+    "access": "public",
+    "export": true,
+    "importPath": "mvkoa/source/index.js",
+    "importStyle": "{DELETE}",
+    "description": null,
+    "lineNumber": 140,
+    "undocument": true,
+    "params": [
+      {
+        "name": "path",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "schema",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "typedef",
+    "name": "DecoratorDescriptor",
+    "memberof": "source/index.js",
+    "static": true,
+    "longname": "source/index.js~DecoratorDescriptor",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "kind",
+        "description": "`class`, `field` or `method`"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "key",
+        "description": "Member name"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "placement",
+        "description": "`static` or `prototype`"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "descriptor",
+        "description": "Last parameter of `Object.defineProperty()`"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "DecoratorDescriptor[]"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "elements",
+        "description": "Class members"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "DecoratorDescriptor"
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "typedef",
+    "name": "Decorator",
+    "memberof": "source/index.js",
+    "static": true,
+    "longname": "source/index.js~Decorator",
+    "access": "public",
+    "description": "",
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "DecoratorDescriptor"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "meta",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": true,
+      "types": [
+        "DecoratorDescriptor"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "type": {
+      "types": [
+        "Function"
+      ],
+      "optional": false,
+      "name": "Decorator"
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "typedef",
+    "name": "Koa",
+    "memberof": "source/index.js",
+    "static": true,
+    "longname": "source/index.js~Koa",
+    "access": "public",
+    "description": "",
+    "see": [
+      "https://github.com/koajs/koa/blob/master/docs/api/index.md#application"
+    ],
+    "type": {
+      "types": [
+        "Function"
+      ],
+      "optional": false,
+      "name": "Koa"
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# MVKoa\n\nNode.JS back-end framework based on [Koa 2][1] & [ECMAScript Decorator proposal][2]\n\n[![NPM Dependency](https://david-dm.org/TechQuery/MVKoa.svg)](https://david-dm.org/TechQuery/MVKoa)\n[![Build Status](https://travis-ci.com/TechQuery/MVKoa.svg?branch=master)](https://travis-ci.com/TechQuery/MVKoa)\n\n[![NPM](https://nodei.co/npm/mvkoa.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/mvkoa/)\n\n## Basic usage\n\n### Core logic\n\n[`source/UserController.js`][3]\n\n([`source/User.js`][4] is a [`Model` class][5])\n\n```javascript\nimport KoaController, { GET, PATCH, POST } from 'mvkoa';\n\nimport { User } from './User';\n\nexport default class UserController extends KoaController {\n    @GET()\n    listAll() {\n        return [];\n    }\n\n    @PATCH('/:id')\n    extend(context, id, body) {\n        return { id, ...body };\n    }\n\n    @POST('/', User)\n    create(context, body) {\n        return body.valueOf();\n    }\n}\n```\n\n`source/index.js`\n\n```javascript\nimport KoaController from 'mvkoa';\nimport bodyParser from 'koa-bodyparser';\nimport mount from 'koa-mount';\n\nimport UserController from './UserController';\n\nconst app = new KoaController()\n    .use(async (context, next) => {\n        try {\n            await next();\n        } catch ({ message }) {\n            (context.status = 500), (context.body = message);\n        }\n    })\n    .use(bodyParser())\n    .use(mount('/users', new UserController()));\n\napp.listen(() => console.log(`Server run at ${app.address}`));\n```\n\n### Installation\n\n```shell\nnpm init\n\nnpm install \\\n    mvkoa \\\n    koa-bodyparser \\\n    koa-mount \\\n    data-scheme \\\n    @babel/polyfill \\\n    @babel/runtime\n\nnpm install \\\n    @babel/cli \\\n    @babel/core \\\n    @babel/preset-env \\\n    @babel/plugin-proposal-decorators \\\n    @babel/plugin-transform-runtime\n```\n\n### Configuration\n\n`package.json`\n\n```json\n{\n    \"scripts\": {\n        \"build\": \"babel source/ -d dist/ -s\",\n        \"start\": \"node dist/\"\n    },\n    \"engines\": {\n        \"node\": \"^7.6.0\"\n    },\n    \"babel\": {\n        \"presets\": [\n            [\n                \"@babel/preset-env\",\n                {\n                    \"targets\": {\n                        \"node\": \"7.6.0\"\n                    }\n                }\n            ]\n        ],\n        \"plugins\": [\n            [\n                \"@babel/plugin-proposal-decorators\",\n                {\n                    \"decoratorsBeforeExport\": true\n                }\n            ],\n            \"@babel/plugin-transform-runtime\"\n        ]\n    }\n}\n```\n\n### Bootstrap\n\n```shell\nnpm run build\n\nnpm start\n```\n\n## Advanced usage\n\nhttps://tech-query.me/MVKoa/manual/\n\n[1]: https://koajs.com/\n[2]: https://github.com/tc39/proposal-decorators/tree/master/previous#readme\n[3]: https://tech-query.me/MVKoa/test-file/test/source/UserController.js.html\n[4]: https://tech-query.me/MVKoa/test-file/test/source/User.js.html\n[5]: https://tech-query.me/DataScheme/\n",
+    "longname": "/home/travis/build/TechQuery/MVKoa/ReadMe.md",
+    "name": "ReadMe.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n    \"name\": \"mvkoa\",\n    \"version\": \"0.3.2\",\n    \"description\": \"Node.JS back-end framework based on Koa 2 & ECMAScript Decorator proposal\",\n    \"keywords\": [\n        \"back-end\",\n        \"framework\",\n        \"koa\",\n        \"ecmascript\",\n        \"decorator\"\n    ],\n    \"homepage\": \"https://tech-query.me/MVKoa/\",\n    \"repository\": {\n        \"type\": \"git\",\n        \"url\": \"git+https://github.com/TechQuery/MVKoa.git\"\n    },\n    \"bugs\": {\n        \"url\": \"https://github.com/TechQuery/MVKoa/issues\"\n    },\n    \"license\": \"AGPL-3.0\",\n    \"author\": \"shiy2008@gmail.com\",\n    \"module\": \"source/index.js\",\n    \"main\": \"dist/index.js\",\n    \"directories\": {\n        \"test\": \"test\"\n    },\n    \"scripts\": {\n        \"format\": \"prettier --write \\\"{,!(node_modules|.git|dist|docs)/**/}*.{html,md,css,less,js,json,yml,yaml}\\\"\",\n        \"lint\": \"eslint source/ test/ --fix\",\n        \"pack\": \"babel source/ -d dist/ -s\",\n        \"debug\": \"npm run format  &&  mocha --inspect-brk --no-timeouts\",\n        \"test\": \"npm run format  &&  npm run lint  &&  mocha --exit\",\n        \"build\": \"npm test  &&  npm run pack  &&  esdoc\",\n        \"prepublishOnly\": \"npm run build\",\n        \"help\": \"esdoc  &&  open-cli docs/index.html\"\n    },\n    \"husky\": {\n        \"hooks\": {\n            \"pre-commit\": \"npm run build  &&  git add .\"\n        }\n    },\n    \"engines\": {\n        \"node\": \"^7.6.0\"\n    },\n    \"dependencies\": {\n        \"internal-ip\": \"^4.3.0\",\n        \"koa\": \"^2.7.0\",\n        \"koa-route\": \"^3.2.0\"\n    },\n    \"peerDependencies\": {\n        \"@babel/polyfill\": \"^7.4.4\",\n        \"@babel/runtime\": \"^7.4.5\"\n    },\n    \"devDependencies\": {\n        \"@babel/cli\": \"^7.4.4\",\n        \"@babel/core\": \"^7.4.5\",\n        \"@babel/plugin-proposal-decorators\": \"^7.4.4\",\n        \"@babel/plugin-transform-runtime\": \"^7.4.4\",\n        \"@babel/polyfill\": \"^7.4.4\",\n        \"@babel/preset-env\": \"^7.4.5\",\n        \"@babel/register\": \"^7.4.4\",\n        \"@babel/runtime\": \"^7.4.5\",\n        \"babel-eslint\": \"^10.0.1\",\n        \"data-scheme\": \"^0.7.3\",\n        \"esdoc\": \"^1.1.0\",\n        \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n        \"esdoc-external-nodejs-plugin\": \"^1.0.0\",\n        \"esdoc-standard-plugin\": \"^1.0.0\",\n        \"eslint\": \"^5.16.0\",\n        \"husky\": \"^2.3.0\",\n        \"koa-bodyparser\": \"^4.2.1\",\n        \"koa-mount\": \"^4.0.0\",\n        \"mocha\": \"^6.1.4\",\n        \"node-fetch\": \"^2.6.0\",\n        \"open-cli\": \"^5.0.0\",\n        \"prettier\": \"^1.17.1\",\n        \"should\": \"^13.2.3\"\n    },\n    \"prettier\": {\n        \"tabWidth\": 4,\n        \"singleQuote\": true\n    }\n}\n",
+    "longname": "/home/travis/build/TechQuery/MVKoa/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualIndex",
+    "globalIndex": false,
+    "content": null,
+    "longname": "",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/travis/build/TechQuery/MVKoa/manual/OOP-API-document.md",
+    "name": "manual/OOP-API-document.md",
+    "content": "# OOP API document\n\n## Installation\n\n```shell\nnpm install -D \\\n    eslint \\\n    babel-eslint \\\n    esdoc \\\n    esdoc-standard-plugin \\\n    esdoc-ecmascript-proposal-plugin \\\n    esdoc-external-nodejs-plugin\n```\n\n## Configuration\n\n`.esdoc.json`\n\n```json\n{\n    \"source\": \"./source\",\n    \"destination\": \"./docs\",\n    \"plugins\": [\n        {\n            \"name\": \"esdoc-standard-plugin\",\n            \"option\": {\n                \"accessor\": {\n                    \"access\": [\"public\", \"protected\"],\n                    \"autoPrivate\": false\n                }\n            }\n        },\n        {\n            \"name\": \"esdoc-ecmascript-proposal-plugin\",\n            \"option\": {\n                \"all\": true\n            }\n        },\n        {\n            \"name\": \"esdoc-external-nodejs-plugin\",\n            \"option\": {\n                \"enable\": true\n            }\n        }\n    ]\n}\n```\n\n`.eslintrc.json`\n\n```json\n{\n    \"env\": {\n        \"es6\": true,\n        \"node\": true\n    },\n    \"parser\": \"babel-eslint\",\n    \"parserOptions\": {\n        \"ecmaVersion\": 9,\n        \"sourceType\": \"module\",\n        \"ecmaFeatures\": {\n            \"legacyDecorators\": true\n        }\n    },\n    \"extends\": \"eslint:recommended\",\n    \"rules\": {\n        \"valid-jsdoc\": [\n            \"error\",\n            {\n                \"prefer\": {\n                    \"returns\": \"return\"\n                },\n                \"requireParamDescription\": false,\n                \"requireReturn\": false,\n                \"requireReturnDescription\": false\n            }\n        ]\n    }\n}\n```\n\n`package.json`\n\n```json\n{\n    \"scripts\": {\n        \"lint\": \"eslint source/ --fix\",\n        \"docs\": \"npm run lint  &&  esdoc\"\n    }\n}\n```\n\n## Generating\n\n```shell\nnpm run docs\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "__docId__": 68,
+    "kind": "testFile",
+    "name": "test/index.spec.js",
+    "content": "import KoaController from '../source';\nimport bodyParser from 'koa-bodyparser';\nimport mount from 'koa-mount';\n\nimport UserController from './source/UserController';\n\nimport fetch from 'node-fetch';\n\nconst app = new KoaController()\n    .use(async (context, next) => {\n        try {\n            await next();\n        } catch ({ message }) {\n            (context.status = 500), (context.body = message);\n        }\n    })\n    .use(bodyParser())\n    .use(mount('/users', new UserController()));\n\n/**\n * @test {KoaController}\n */\ndescribe('HTTP router', () => {\n    var host;\n\n    function request(path, method, body) {\n        return fetch(host + path, {\n            method,\n            headers: {\n                'Content-Type': 'application/x-www-form-urlencoded'\n            },\n            body\n        });\n    }\n\n    /**\n     * @test {KoaController.getIPA}\n     * @test {KoaController#listen}\n     */\n    it('Boot server', done =>\n        app.listen(() => {\n            host = app.address;\n\n            host.should.be.match(/^http:\\/\\/\\S+:\\d+$/);\n\n            done();\n        }));\n\n    /**\n     * @test {request}\n     * @test {KoaController#constructor}\n     */\n    it('GET request', async () => {\n        const data = await (await request('/users')).json();\n\n        data.should.be.eql([]);\n    });\n\n    /**\n     * @test {request}\n     * @test {KoaController#constructor}\n     */\n    it('PATCH request', async () => {\n        const data = await (await request(\n            '/users/1',\n            'PATCH',\n            'a=1&b=2'\n        )).json();\n\n        data.should.be.eql({ id: '1', a: '1', b: '2' });\n    });\n\n    /**\n     * @test {request}\n     * @test {KoaController#constructor}\n     */\n    describe('POST request', () => {\n        it('passes Schema validation', async () => {\n            const response = await request(\n                '/users',\n                'POST',\n                'name=test&email=test@example.com'\n            );\n\n            response.status.should.be.equal(201);\n\n            (await response.json()).should.be.eql({\n                name: 'test',\n                email: 'test@example.com',\n                gender: 2,\n                avatar: 'http://example.com/test.jpg'\n            });\n        });\n\n        it('fails Schema validation', async () => {\n            const response = await request('/users', 'POST', 'name=test');\n\n            response.status.should.be.equal(500);\n\n            (await response.text()).should.be.equal(\n                '\"email\" of User should match /^.+?@(.+?\\\\.){1,}\\\\w+$/'\n            );\n        });\n    });\n});\n",
+    "static": true,
+    "longname": "/home/travis/build/TechQuery/MVKoa/test/index.spec.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 69,
+    "kind": "test",
+    "name": "describe0",
+    "testId": 0,
+    "memberof": "test/index.spec.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "test/index.spec.js~describe0",
+    "access": null,
+    "description": "HTTP router",
+    "lineNumber": 23,
+    "testTargets": [
+      "KoaController"
+    ]
+  },
+  {
+    "__docId__": 70,
+    "kind": "test",
+    "name": "it1",
+    "testId": 1,
+    "memberof": "test/index.spec.js~describe0",
+    "testDepth": 1,
+    "static": true,
+    "longname": "test/index.spec.js~describe0.it1",
+    "access": null,
+    "description": "Boot server",
+    "lineNumber": 40,
+    "testTargets": [
+      "KoaController.getIPA",
+      "KoaController#listen"
+    ]
+  },
+  {
+    "__docId__": 71,
+    "kind": "test",
+    "name": "it2",
+    "testId": 2,
+    "memberof": "test/index.spec.js~describe0",
+    "testDepth": 1,
+    "static": true,
+    "longname": "test/index.spec.js~describe0.it2",
+    "access": null,
+    "description": "GET request",
+    "lineNumber": 53,
+    "testTargets": [
+      "request",
+      "KoaController#constructor"
+    ]
+  },
+  {
+    "__docId__": 72,
+    "kind": "test",
+    "name": "it3",
+    "testId": 3,
+    "memberof": "test/index.spec.js~describe0",
+    "testDepth": 1,
+    "static": true,
+    "longname": "test/index.spec.js~describe0.it3",
+    "access": null,
+    "description": "PATCH request",
+    "lineNumber": 63,
+    "testTargets": [
+      "request",
+      "KoaController#constructor"
+    ]
+  },
+  {
+    "__docId__": 73,
+    "kind": "test",
+    "name": "describe4",
+    "testId": 4,
+    "memberof": "test/index.spec.js~describe0",
+    "testDepth": 1,
+    "static": true,
+    "longname": "test/index.spec.js~describe0.describe4",
+    "access": null,
+    "description": "POST request",
+    "lineNumber": 77,
+    "testTargets": [
+      "request",
+      "KoaController#constructor"
+    ]
+  },
+  {
+    "__docId__": 74,
+    "kind": "test",
+    "name": "it5",
+    "testId": 5,
+    "memberof": "test/index.spec.js~describe0.describe4",
+    "testDepth": 2,
+    "static": true,
+    "longname": "test/index.spec.js~describe0.describe4.it5",
+    "access": null,
+    "description": "passes Schema validation",
+    "lineNumber": 78
+  },
+  {
+    "__docId__": 75,
+    "kind": "test",
+    "name": "it6",
+    "testId": 6,
+    "memberof": "test/index.spec.js~describe0.describe4",
+    "testDepth": 2,
+    "static": true,
+    "longname": "test/index.spec.js~describe0.describe4.it6",
+    "access": null,
+    "description": "fails Schema validation",
+    "lineNumber": 95
+  }
+]
